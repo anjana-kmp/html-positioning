@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>position default</title>
+</head>
+<style>
+
+    div{
+        border: 1px dashed green;
+        padding: 20px;
+        position: relative;
+        height: fit-content;
+
+    }
+    section{
+        border: 1px dashed blue;
+        position: relative;
+    }
+    section:nth-child(1){
+        top: 10px;
+    }
+    section:nth-child(2){
+        top: 100px;
+    }    section:nth-child(3){
+        top: 200px;
+    }    section:nth-child(4){
+        top: 300px;
+    }
+</style>
+<body>
+    <a href="">About</a>
+    <div>
+        <section>This is first section</section>
+        <section>This is second section</section>
+        <section>This is third section</section>
+        <section>This is fourth section</section>
+
+
+    </div>
+</body>
+</html>
