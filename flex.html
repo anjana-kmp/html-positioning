@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex positioning</title>
     <style>
-        .container{
+        .container {
             display: flex;
             border: 2px dashed blue;
-            flex-direction:row ;
+            flex-direction: row;
             height: 500px;
             align-items: center;
 
 
 
         }
-        .box{
+
+        .box {
             border: 2px dashed brown;
             flex: 1;
             text-align: center;
@@ -27,8 +29,37 @@
 
 
         }
-        .box:first-child{
+
+        .box:first-child {
             flex: 3;
+
+
+        }
+
+        .another-container {
+            display: flex;
+            justify-content: stretch;
+            /* align-items: center; */
+            align-content: stretch;
+            background-color: cadetblue;
+
+        }
+        section{
+            flex: 1;
+            margin: auto;
+        }
+
+        .another-container section {
+            flex: 10;
+            border: 2px dashed black;
+
+        }
+
+        .another-container section:first-child {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 210px;
+            flex: 2;
 
         }
     </style>
@@ -44,5 +75,68 @@
         <div class="box">6</div>
 
     </div>
+    <div class="another-container">
+        <section>
+            <ul>
+                <li>Mickey</li>
+                <li>Donald</li>
+                <li>Goofy</li>
+                <li>Daisy</li>
+
+            </ul>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repudiandae, explicabo expedita hic
+                asperiores natus culpa quas necessitatibus, repellat deserunt maiores nostrum officia, fugit
+                blanditiis
+                aliquam rem. Esse, est quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                cupiditate nisi fugiat laboriosam vel aspernatur reiciendis mollitia? Ex sequi assumenda, voluptatem
+                dolorem eos ratione hic ipsa excepturi cum unde facere.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repudiandae, explicabo expedita hic
+                asperiores natus culpa quas necessitatibus, repellat deserunt maiores nostrum officia, fugit
+                blanditiis
+                aliquam rem. Esse, est quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                cupiditate nisi fugiat laboriosam vel aspernatur reiciendis mollitia? Ex sequi assumenda, voluptatem
+                dolorem eos ratione hic ipsa excepturi cum unde facere.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repudiandae, explicabo expedita hic
+                asperiores natus culpa quas necessitatibus, repellat deserunt maiores nostrum officia, fugit
+                blanditiis
+                aliquam rem. Esse, est quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                cupiditate nisi fugiat laboriosam vel aspernatur reiciendis mollitia? Ex sequi assumenda, voluptatem
+                dolorem eos ratione hic ipsa excepturi cum unde facere.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repudiandae, explicabo expedita hic
+                asperiores natus culpa quas necessitatibus, repellat deserunt maiores nostrum officia, fugit
+                blanditiis
+                aliquam rem. Esse, est quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                cupiditate nisi fugiat laboriosam vel aspernatur reiciendis mollitia? Ex sequi assumenda, voluptatem
+                dolorem eos ratione hic ipsa excepturi cum unde facere.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repudiandae, explicabo expedita hic
+                asperiores natus culpa quas necessitatibus, repellat deserunt maiores nostrum officia, fugit
+                blanditiis
+                aliquam rem. Esse, est quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                cupiditate nisi fugiat laboriosam vel aspernatur reiciendis mollitia? Ex sequi assumenda, voluptatem
+                dolorem eos ratione hic ipsa excepturi cum unde facere.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repudiandae, explicabo expedita hic
+                asperiores natus culpa quas necessitatibus, repellat deserunt maiores nostrum officia, fugit
+                blanditiis
+                aliquam rem. Esse, est quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                cupiditate nisi fugiat laboriosam vel aspernatur reiciendis mollitia? Ex sequi assumenda, voluptatem
+                dolorem eos ratione hic ipsa excepturi cum unde facere.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repudiandae, explicabo expedita hic
+                asperiores natus culpa quas necessitatibus, repellat deserunt maiores nostrum officia, fugit
+                blanditiis
+                aliquam rem. Esse, est quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                cupiditate nisi fugiat laboriosam vel aspernatur reiciendis mollitia? Ex sequi assumenda, voluptatem
+                dolorem eos ratione hic ipsa excepturi cum unde facere.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus repudiandae, explicabo expedita hic
+                asperiores natus culpa quas necessitatibus, repellat deserunt maiores nostrum officia, fugit
+                blanditiis
+                aliquam rem. Esse, est quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                cupiditate nisi fugiat laboriosam vel aspernatur reiciendis mollitia? Ex sequi assumenda, voluptatem
+                dolorem eos ratione hic ipsa excepturi cum unde facere.</p>
+        </section>
+    </div>
+
 </body>
+
 </html>
